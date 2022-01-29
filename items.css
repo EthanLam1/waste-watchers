@@ -30,9 +30,33 @@
     border-radius: 50px;
 }
 
-itemReturn{
-    font-size:xx-small;
+.itemReturn{
+    font-size:small;
     position: apsolute;
     left: 300px;
 
+}
+
+
+.button {
+    background-color: white;
+    font-size:large;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float:unset;
+    border-radius: 20px;
+    padding: 10px;
+    position: fixed; bottom: 0;
+    margin: 30px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+a:hover {
+    background-color: #ddd;
 }
