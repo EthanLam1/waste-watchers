@@ -11,9 +11,14 @@
     background-image: url("assets/plasticWaterBottle.jpeg");
     display: flex;
     flex-direction: column;
+
+}
+
+.basics{
     align-items: center;
     display: flex;
     flex-direction: column;
+
 }
 
 .itemP{
@@ -23,4 +28,11 @@
     background-color: rgb(255, 255, 255);
     width: 60vw;
     border-radius: 50px;
+}
+
+itemReturn{
+    font-size:xx-small;
+    position: apsolute;
+    left: 300px;
+
 }
