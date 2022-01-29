@@ -1,0 +1,46 @@
+.backgroundFacts {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: url(assets/factsBackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -8px;
+}
+
+.hFacts{
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float:right;
+    width: 20vw;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.factBoarder{
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    width: 70vw;
+    margin: 30px;
+}
+
+.factParagraph{
+    font-size: larger;
+}
+
+.hItem{
+    text-align: center;
+}
