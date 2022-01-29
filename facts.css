@@ -21,5 +21,14 @@
 }
 
 .factBoarder{
+    font-size: xx-large;
     background-color: white;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.factParagraph{
+    font-size: larger;
 }
