@@ -1,7 +1,8 @@
 .background {
-    background-color: aqua;
+    background-image: url("Legolus.png");
 }
 
 .comicSans{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
