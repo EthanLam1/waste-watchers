@@ -35,8 +35,8 @@
 
             <button class="info-button">Fun facts about waste!</button>
             <button class="recycling-button" id="recycling-button">Learn about Recycling!</button>
-            <button class="trash-button">Learn about Trash!</button>
-            <button class="organic-button">Learn about Organic!</button>
+            <button class="trash-button" id= "trash-button">Learn about Trash!</button>
+            <button class="organic-button" id="compost-button">Learn about Organic!</button>
 
             
             <!-- The Modal -->
@@ -46,6 +46,29 @@
                 <div class="modal-content">
                     <span class="close" id="r_close">&times;</span>
                     <p>Recycling is pretty pog. Pretty sick. I love recycling. </p>
+                </div>
+            
+            </div>
+
+            <!-- The Modal -->
+            <div id="myTrashModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="t_close">&times;</span>
+                    <p>Trash is not totes' yeet my dude </p>
+                </div>
+            
+            </div>
+
+          
+            <!-- The Modal -->
+            <div id="myCompostModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="c_close">&times;</span>
+                    <p>Compost is anything that can be reclaimed by our overlord, mother nature </p>
                 </div>
             
             </div>
@@ -74,7 +97,48 @@
         if (event.target == r_modal) {
             r_modal.style.display = "none";
         }
+        if (event.target == t_modal) {
+            t_modal.style.display = "none";
+        }
+        if (event.target == c_modal) {
+            c_modal.style.display = "none";
+        }
     }
+    //Trash model stuff
+    var t_modal = document.getElementById("myTrashModal");
+
+    var t_btn = document.getElementById("trash-button");
+
+    var t_span = document.getElementById("t_close");
+
+    // // When the user clicks on the button, open the modal
+    t_btn.onclick = function () {
+        t_modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    t_span.onclick = function () {
+        t_modal.style.display = "none";
+    }
+
+    //Compost
+    var c_modal = document.getElementById("myCompostModal");
+
+    var c_btn = document.getElementById("compost-button");
+
+    var c_span = document.getElementById("c_close");
+
+    // // When the user clicks on the button, open the modal
+    c_btn.onclick = function () {
+        c_modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    c_span.onclick = function () {
+        c_modal.style.display = "none";
+    }
+
+
     function myFunction() {
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById("myInput");
