@@ -1,0 +1,25 @@
+.backgroundFacts {
+    height: 100vh; 
+    width: 100vw; 
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("assets/factsBackground.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hFacts{
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.factBoarder{
+    background-color: white;
+}
