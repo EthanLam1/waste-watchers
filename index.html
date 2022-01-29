@@ -12,7 +12,20 @@
             </div>
 
             <div class = "searchBar">
-                <input type = "text" class = "input" placeholder="Search for YOUR waste">
+
+            <input type="text" class = "input" id="myInput" onkeyup="myFunction()" placeholder="Search for YOUR waste!" title="Type in a name">
+
+            <ul id="myUL">
+            <li><a href="#">Water Bottle</a></li>
+            <li><a href="#">Glass Jar</a></li>
+            <li><a href="#">Banana Peel</a></li>
+            <li><a href="#">Tissue</a></li>
+            <li><a href="#">Old Phone</a></li>
+            <li><a href="#">Paper</a></li>
+            <li><a href="#">Face Masks</a></li>
+            </ul>
+
+
             </div>
 
             <button class = "info-button">Fun facts about waste!</button>
@@ -21,4 +34,23 @@
             <button class = "organic-button">Learn about Organic!</button>
         </div>
     </body>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </html>
