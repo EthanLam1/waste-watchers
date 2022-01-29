@@ -13,10 +13,38 @@
             </div>
 
             <div class = "searchBar">
-                <input type = "text" class = "input" placeholder="Search for YOUR waste">
-                <p>
-                    Testeroonie
-                </p>
+
+                <input type="text" class = "input" id="myInput" onkeyup="myFunction()" placeholder="Search for YOUR waste!" title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Water Bottle</a></li>
+  <li><a href="#">Glass Jar</a></li>
+  <li><a href="#">Banana Peel</a></li>
+  <li><a href="#">Tissue</a></li>
+  <li><a href="#">Old Phone</a></li>
+  <li><a href="#">Paper</a></li>
+  <li><a href="#">Face Masks</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
             </div>
 
             <p> I need a lot of words and I need em now!! \n Next line please</p>
