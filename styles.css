@@ -1,5 +1,15 @@
 .background {
-    background-image: url("Legolus.png");
+    height: 100vh; 
+    /* width: 100vh;  */
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+
+
+
+    background-image: url("RecyclingBinEdited.png");
+
+    
 }
 
 .comicSans{
