@@ -12,10 +12,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .itemP{
-    padding-left: 201px;
-    padding-right: 200px;
+    padding-left: 19px;
+    padding-right: 20px;
     font-size:x-large;
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+    border-radius: 50px;
 }
