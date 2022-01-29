@@ -18,5 +18,10 @@
 }
 
 .searchBar{
-    
+    float: right;
+    float: top;
+}
+.searchBar .input{
+    width: 80%;
+    padding: 15px;
 }
