@@ -1,0 +1,14 @@
+{
+  "name": "wastewatchers-backend",
+  "version": "1.0.0",
+  "description": "this is a simple backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "author": "ethanlam",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
