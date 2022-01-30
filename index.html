@@ -144,28 +144,26 @@
 
 
     function myFunction() {
+        console.log("what");
         var input, filter, ul, li, a, i, txtValue;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
         ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
+        a = ul.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
+                a[i].style.display = "";
             } else {
-                li[i].style.display = "none";
+                a[i].style.display = "none";
             }
         }
+        console.log(li)
     }
     document.getElementById("myInput").addEventListener('input', function () {
-        console.log("function called")
         if (document.getElementById("myInput").value.length >= 1) {
-            console.log("visible");
             document.getElementById("myUL").style.visibility = "visible";
         } else {
-            console.log("hidden");
             document.getElementById("myUL").style.visibility = "hidden";
         }
     });
