@@ -76,3 +76,7 @@
 a:hover {
     background-color: #ddd;
 }
+
+.itemHead{
+    background-color: white;
+}
