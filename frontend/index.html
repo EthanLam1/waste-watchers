@@ -29,9 +29,13 @@
                     <a class="bottomlink" href="#">Cindy</a>
                 </ul>
             </div>
-
-
-            </div>
+            
+            
+        </div>
+        <div class="uploadwrapper">
+            <p class="uploadtext">Or upload a picture of what you're looking for here!</p>
+            <input type="file" id="fileUpload" />
+        </div>
 
             <a href="facts.html" class="info-button">Fun facts about waste!</a>
             <button class="recycling-button" id="recycling-button">Learn about Recycling!</button>
@@ -88,6 +92,29 @@
 <script src="./node_modules/axios/dist/axios.min.js"></script>
 
   <script>
+
+    const handleImageUpload = event => {
+        const files = event.target.files
+        const formData = new FormData()
+        formData.append('myFile', files[0])
+
+        fetch('/saveImage', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.path)
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
+    document.querySelector('#fileUpload').addEventListener('change', event => {
+        handleImageUpload(event)
+    })
+
     var r_modal = document.getElementById("myRecyclingModal");
 
     var r_btn = document.getElementById("recycling-button");
