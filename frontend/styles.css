@@ -125,8 +125,8 @@ a:hover {
   padding: 20px;
   border: 1px solid #888;
   border-radius: 30px;
-  height: 70vh;
-  width: 80%; /* Could be more or less, depending on screen size */
+
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
