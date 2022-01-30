@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
     margin: -8px;
+    
 }
 
 .hFacts{
@@ -43,4 +44,16 @@
 
 .hItem{
     text-align: center;
+}
+
+.itemReturn{
+    position: fixed;
+    font-size:small;
+    position: apsolute;
+    left: 20px;
+    top: 20px;
+    text-align: left;
+    align-items:center;
+    color: rgb(255, 255, 255);
+
 }
