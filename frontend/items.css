@@ -78,5 +78,11 @@ a:hover {
 }
 
 .itemHead{
+    font-size: large;
     background-color: white;
+    border-radius: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    align-items: center;
+    margin: 10px;
 }
